@@ -21,7 +21,6 @@ def bracket_combinations(num: int) -> int:
     if num == 0:
         return 1
     return math.comb(2*num, num)//(num + 1)
-    # keep this function call here
 
 
 def bracket_combinations2(num: int) -> int:
