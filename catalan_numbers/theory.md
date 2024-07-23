@@ -11,7 +11,7 @@ They satisfy a fundamental recurrence relation, and have a closed-form formula i
 
 ## Definition
 C<sub>0</sub>, C<sub>1</sub>, C<sub>2</sub>, ..., C<sub>n</sub> are given by the formula:   
-C<sub>n</sub> = $\frac{1}{n+1}$($\frac{2n}{n}$)   
+C<sub>n</sub> = $\frac{1}{n+1}$($\binom{2n}{n}$)   
 
 The first few Catalan numbers are:   
 *C<sub>0</sub> = 1*   
@@ -23,14 +23,13 @@ The first few Catalan numbers are:
 
 ## Applications
 There are many areas of applications of catalan numbers. The following are handful:
-- Dyck Paths
-- Acceptable Sequence
+- Dyck Paths and Acceptable Sequence
 - Balanced Parenthesis
 - Binary Tree
 - Triangulations of Polygons 
 - Mountain Ranges
 
-### Dyck Paths
+### Dyck Paths and Acceptable Sequence
 ##### Theorem
 The number of valid parenthesis expressions that consists of `n` right parenthesis is equal to the n<sup>th</sup> Catalan number.
 For example C<sub>3</sub> = 5 and there are 5 ways to create valid expressions with 3 sets of parenthesis.
@@ -47,6 +46,9 @@ a<sub>1</sub> + a<sub>2</sub> + ... a<sub>k</sub> ≥ 0
 
 for `k` = `1`, `2`, `3`, `...`, `2n` equals the n<sup>th</sup> Catalan number. 
 
+
+
+Therefore, the number of Dyck paths of length 2n is given by:
 
 ## Computation Methods
 - Recurrence Relation
